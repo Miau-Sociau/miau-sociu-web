@@ -1,10 +1,6 @@
 ---
 import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Login from '../components/Login.tsx';
 ---
 
 <html lang="en">
@@ -17,9 +13,8 @@ import Button from '../components/Button.astro';
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+    <div class="grid place-items-center h-screen content-center">
+    <Login client:load />
 		</div>
 	</body>
 </html>
